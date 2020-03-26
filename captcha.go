@@ -27,7 +27,7 @@ func (c *Captcha) Create() (*Image, string) {
 	return dst, str
 }
 
-var letters = []byte("123456789abcdefghijkmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+var letters = []byte("23456789abdefghjmnqrtuyABDEFGHJLMNQRTUY")
 
 func (c *Captcha) randStr(size int) []byte {
 	result := make([]byte, size)
